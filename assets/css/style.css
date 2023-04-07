@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root {
+    --primary-color: #EA8953;
+    --secondary-color: #62667C;
+    --blue-color: #69B0EE;
+    --gradient: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    --white-gradient: linear-gradient(45deg, #dfe9f3, #ffffff);
+}
+
+* {
+    box-sizing: border-box;
+    outline: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--primary-color);
+    font-family: 'Open sans', sans-serif;
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+
+.container {
+    max-width: 640px;
+    margin: 50px auto;
+    background: var(--secondary-color);
+    padding: 20px;
+    border-radius: 10px;
+    color:#fff;
+}
+.container h1{
+    text-align: center;
+    width: 100%;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2em 0;
+    background: var(--secondary-color);
+}
+
+.calculadora {
+    width: 400px;
+}
+.display {
+    font-size: 3em;
+    width: 100%;
+    text-align: right;
+    background: var(--blue-color);
+    border: none;
+}
+.display:focus {
+    background: #5fa9e9;
+    border: 1px solid #000;
+}
+.btn {
+    width: 100%;
+    height: 60px;
+    font-size: 1.5em;
+    border: none;
+    cursor: pointer
+}
+
+.btn-num {
+    background: #dfdfdf;
+}
+.btn-num:hover {
+    background-color: #bbbbbb;
+}
+
+.btn-eq {
+    background: #2CBFAE;
+}
+.btn-eq:hover {
+    background-color: #23af9f;
+}
+.btn-clear {
+    background: #EF5261;
+}
+.btn-clear:hover {
+    background-color: #ce3f4d;
+}
+.btn-del {
+    background: #F6C863;
+}
+.btn-del:hover {
+    background-color: #dfb253;
+}
